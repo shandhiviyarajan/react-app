@@ -30,6 +30,8 @@ handleEvent = (event) =>
 		event.preventDefault();
    axios.get(`https://api.github.com/users/${this.state.userName}`)
    .then(resp=>{
+   //clear text box
+    this.setState({userName:""});
        this.props.onSubmit(
        			{
                name:resp.data.name,
@@ -78,7 +80,7 @@ class App extends React.Component{
         
         addNewCard = (cardInfo) => {
             this.setState(prevState => ({
-            		//cards:prevState.cards.contact(cardInfo)
+           		 	cards : prevState.cards.concat(cardInfo)
             }))
         }
         render(){
