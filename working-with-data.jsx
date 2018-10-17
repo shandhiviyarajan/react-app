@@ -1,3 +1,4 @@
+//Card component 
 const Card = function(props){
     return(
           <div style={{display: 'flex', marginBottom:'15px'}}>
@@ -10,6 +11,7 @@ const Card = function(props){
     )
 }
 
+//Cart list component
 const CardList = function(props){
     return(
         <div>
@@ -18,7 +20,7 @@ const CardList = function(props){
     )
 }
 
-
+//Form Component
 class Form extends React.Component{
 
 state = {userName : ""}
@@ -26,13 +28,8 @@ handleEvent = (event) =>
 
 {
 		event.preventDefault();
-   //console.log(this.userName.value);
-   console.log(this.state.userName);
-   
    axios.get(`https://api.github.com/users/${this.state.userName}`)
    .then(resp=>{
-      
-      
        this.props.onSubmit(
        			{
                name:resp.data.name,
@@ -43,9 +40,9 @@ handleEvent = (event) =>
    })
 }
 
-handleChange = (event) =>{
-this.setState({userName:event.target.value})
-}
+    handleChange = (event) => {
+        this.setState({userName:event.target.value})
+    }
 
     render(){
         return(
@@ -57,6 +54,7 @@ this.setState({userName:event.target.value})
     }
 }
 
+//App Component
 class App extends React.Component{
         state = {
             cards: [
@@ -80,7 +78,7 @@ class App extends React.Component{
         
         addNewCard = (cardInfo) => {
             this.setState(prevState => ({
-            		cards:prevState.cards.contact(cardInfo)
+            		//cards:prevState.cards.contact(cardInfo)
             }))
         }
         render(){
