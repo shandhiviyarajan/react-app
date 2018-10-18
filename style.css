@@ -1,0 +1,24 @@
+.mountNode {
+  color: #333;
+}
+
+span{
+width:24px;
+border-radius:100px;
+display:inline-block;
+background:#d8d8d8;
+text-align:center;
+margin:0px 5px 0px 0px;
+cursor:pointer;
+}
+
+span:hover{
+background:#b8b8b8;
+
+}
+
+span.selected{
+background:#eee;
+color:#e1e1e1;
+cursor:not-allowed;
+}
