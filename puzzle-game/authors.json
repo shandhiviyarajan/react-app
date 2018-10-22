@@ -1,0 +1,88 @@
+{
+  
+  authors:[
+    {
+      name:'Ernest  Hemingway',
+      country:'United States ',
+      url:'https://etautz.com/media/wysiwyg/OriginalMan_ErnestHemingway_body.JPG',
+      books:['Hills Like White Elephants','The Killers','The Short Stories','The Sun Also Rises', 'The old man & the sea']
+      
+    },
+    
+    {
+      name:'Mark Twain',
+      country:'United States ',
+      url:'https://www.labirint.ru/images/upl/descripts/pic_1531912422.jpg',
+      books:['The Prince and the Pauper','Is He Dead?','The Adventures of Tom Sawyer','The Prince and the Pauper']
+      
+    },
+    
+    {
+      name:'Charles Dickens',
+      country:'United Kingdom ',
+      url:'https://cdn.britannica.com/s:700x450/46/129246-004-23B5E694.jpg',
+      books:['A Tale of Two Cities','No Thoroughfare','The Frozen Deep','Oliver Twist','Hard Times']
+      
+    },
+    {
+      name:'John Steinbeck',
+      country:'United States',
+      url:'https://www.theparisreview.org/il/c625e7c0b9/large/JohnSteinbeck-thumb.jpg',
+      books:['Of mice and Men', 'The Pearl','East of Eden','Cannery Row','The Grapes of wrath']
+      
+    },
+    {
+      name:'Emily Dickinson',
+      country:'United States',
+      url:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Emily_Dickinson_daguerreotype.jpg/220px-Emily_Dickinson_daguerreotype.jpg',
+      books:['Because I could not stop for Death']
+      
+    },
+    {
+      name:'J. K. Rowling',
+      country:'United Kingdom',
+      url:'https://timedotcom.files.wordpress.com/2014/07/187481786.jpg',
+      books:['Fantastic Beasts And Where To Find Them','Fantastic Beasts: The Crimes of Grindelwald','Happy Potter']
+      
+    },
+    {
+      name:'Stephen King',
+      country:'United States',
+      url:'http://f.i.uol.com.br/folha/ilustrada/images/17279410.jpeg',
+      books:['The Shining','Pet Sematary','The Stand' ,'Misery','Carrie']
+      
+    },
+    {
+      name:'William Shakespeare',
+      country:'United Kingdom',
+      url:'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201404/shakespeare2_042314011036.jpg',
+      books:['Hamlet','Romeo & Juliet','Othello','Julius Caesar','The Merchant of Venice','The TEmpest','King Lear','As you like it']
+      
+    },
+    {
+      name:'Arthur Conan Doyle',
+      country:'United Kingdom',
+      url:'https://www.arthurconandoyle.com/images/biography/11_Uniform_Framed.jpg',
+      books:['Sherlock Holmes','Sherlock Holmes: A Game of Shadows','The lost world','A study in scarlet', 'The sign of the Four']
+      
+    },
+       {
+      name:'John Ronald Reuel Tolkien',
+      country:'United Kingdom',
+      url:'https://www.biographyonline.net/wp-content/uploads/2014/05/jrr-tolkien1.jpeg',
+      books:['The Lord of the Rings','The Hobbit','The fall of gondolin', 'Beren And Luthien']
+      
+    },
+    
+    {
+      name:'Hergé / Georges Remi',
+      country:'Belgium',
+      url:'https://cdn.radiofrance.fr/s3/cruiser-production/2017/02/5b78a062-b8ad-4661-a391-7c8694bfccd3/640_herge_000_sapa990114130630.jpg',
+      books:['Tintin in America','Tintin in Congo', 'The blue lotus','Tintin in the land of the soviets','Red rackham's Treasure]
+      
+    }
+    
+    
+    
+    ]
+}

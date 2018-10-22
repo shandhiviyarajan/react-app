@@ -1,45 +1,34 @@
-class Button extends React.Component {
+import React from "react";
+import ReactDOM from "react-dom";
 
-
-    handleClick = () => {
-        this.props.click(this.props.increase)
-    }
-
-
-    render() {
-        return (
-            <button onClick={this.handleClick}>
-                +{this.props.increase}
-            </button>
-        )
-    }
-}
-const Result = (props) => {
-    return (
-        <div>{props.value}</div>
-    )
+const Author = () => {
+  return <div>Authors</div>;
 };
+
+const Answer = props => {
+  console.log(props.randomBooks);
+  return <div>
+    {
+      props.randomBooks.map((n,i) => 
+        <button key={i}>{n}</button>)
+    }
+  </div>;
+};
+
 class App extends React.Component {
+  state = {
+    randomBooks: [1, 2, 3, 4]
+  };
 
-    state = {counter: 0};
-
-    increaseValue = (increaseValue) => {
-        this.setState((prevState) => {
-            return {
-                counter: prevState.counter + increaseValue
-            }
-        });
-    };
-
-    render() {
-        return (
-            <div>
-                <Button click={this.increaseValue} increase={5}/>
-                <Button click={this.increaseValue} increase={10}/>
-                <Button click={this.increaseValue} increase={15}/>
-                <Result value={this.state.counter}/>
-            </div>
-        )
-    };
+  render() {
+    return (
+      <div>
+        <Author />
+        <Answer randomBooks={this.state.randomBooks} />
+      </div>
+    );
+  }
 }
-ReactDOM.render(<App/>, mountNode);
+
+const mountNode = document.getElementById("mountNode");
+ReactDOM.render(<App />, mountNode);
