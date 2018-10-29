@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arial";
+}
+
+.game-container {
+  margin: 0 auto;
+  width: 224px;
+}
+
+.game-numbers {
+  width: 440px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.game-numbers div {
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  margin: 0px 5px;
+  border-radius: 50px;
+  background: #eee;
+  display: inline-flex;
+  text-align: Center;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-numbers div:hover {
+  background: #d8d8d8;
+}
+
+.game-container > div {
+  width: 72px;
+  height: 72px;
+  border: thin solid #333;
+  border-collapse: collapse;
+  background: #252525;
+  color: #fff;
+  text-align: Center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container > div.active {
+  background: green;
+}
+
+#b,
+#c,
+#d,
+#e,
+#f,
+#g {
+  float: left;
+}
+
+div#a,
+#h {
+  clear: both;
+  margin: 0 auto;
+}
